@@ -1,0 +1,36 @@
+# ============================================================
+#  .gitignore – PNG VHDL Project
+# ============================================================
+
+# ---------- ModelSim / QuestaSim ----------
+modelsim/work/
+modelsim/transcript
+modelsim/vsim.wlf
+modelsim/*.cr.mti
+
+# ---------- Vivado generated files ----------
+Vivado/**/project_PNG.runs/
+Vivado/**/project_PNG.sim/
+Vivado/**/project_PNG.ip_user_files/
+Vivado/**/.Xil/
+Vivado/**/*.jou
+Vivado/**/*.log
+Vivado/**/*.str
+Vivado/**/NA/
+Vivado/**/*.hbs
+Vivado/**/*.pb
+
+# Keep important Vivado files
+!Vivado/**/project_PNG.xpr
+!Vivado/**/PNG_constraints.xdc
+!Vivado/**/project_PNG.srcs/
+
+# ---------- OS files ----------
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# ---------- Editor files ----------
+*.bak
+*.swp
+*~
