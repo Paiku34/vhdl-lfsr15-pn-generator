@@ -60,18 +60,13 @@ The generator uses a **structural** VHDL architecture composed of three building
 
 ### Block diagram
 
-```
-         init ──────────────────────────────────────────────────┐
-                                                                │ sel
-IR[1..15] ──────────────────────────────────────────────────   │
-                                                           │    │
-     ┌─────┐   ┌────┐   ┌─────┐   ┌────┐         ┌─────┐ │  ┌─────┐
- ──▶│ MUX │──▶│ FF │──▶│ MUX │──▶│ FF │── ··· ──│ MUX │─┘  │     │
-     └─────┘   └────┘   └─────┘   └────┘         └─────┘    │ XOR │──▶ feedback
-       Q1        Q2       Q3        ...              Q15      │ net │
-                                                              └─────┘
-                                                   (taps: 15,13,9,8,7,5)
-```
+<div align="center">
+
+![Block diagram](screenshots/Immagine%202025-01-26%20112119.png)
+
+*RTL block diagram of the PNG design (Vivado)*
+
+</div>
 
 ### Port description
 
@@ -275,7 +270,7 @@ Synthesis results on **xc7z010clg400-1** with Vivado 2022.2:
 
 ## 👤 Author
 
-**Klaudio Caca** — January 2025
+**Klaudio Ciacia** — January 2025
 
 ---
 
